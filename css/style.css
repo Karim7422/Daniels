@@ -1,0 +1,628 @@
+/* Global Classes Start */
+:root {
+    --heading-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+    --main-white: #ffffff;
+    --main-black: #1c1c1c;
+    --heading-color: #343434;
+    --secondary-color: #748081;
+    --bg-color: #F7F7F7;
+}
+
+section:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.margin {
+    margin: 7rem 0;
+}
+
+.padding-y {
+    padding: 7rem 0;
+}
+
+.title {
+    position: relative;
+    font-family: var(--heading-font);
+    font-weight: 800;
+    width: fit-content !important;
+}
+
+.title::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat;
+    bottom: -25%;
+    left: 0;
+}
+
+/* Global Classes End */
+
+/* Header Style Start */
+header .navbar-brand {
+    font-family: var(--heading-font);
+    color: var(--main-white);
+}
+
+header nav ul li a {
+    position: relative;
+    font-family: var(--secondary-font);
+    color: var(--main-white);
+}
+
+header nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    transition: all 0.3s;
+}
+
+header nav ul li .active::before {
+    width: 100%;
+}
+
+/* Header Style End */
+
+/* Main Style Start */
+#home {
+    background-image: url('../imgs/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#home .bg-overlay {
+    background-color: #00000097;
+    inset: 0;
+}
+
+#home .content {
+    z-index: 1;
+    color: var(--main-white);
+}
+
+#home .content .caption h2 {
+    font-family: var(--heading-font);
+}
+
+#home .content span {
+    font-family: var(--secondary-font);
+}
+
+#home .content span::after {
+    content: "";
+    font-weight: 400;
+    animation: typing 12s linear infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "";
+    }
+
+    0.9615384615384616% {
+        content: "L|";
+    }
+
+    1.9230769230769231% {
+        content: "La|";
+    }
+
+    2.8846153846153846% {
+        content: "Lar|";
+    }
+
+    3.8461538461538463% {
+        content: "Larr|";
+    }
+
+    4.8076923076923075% {
+        content: "Larry|";
+    }
+
+    5.769230769230769% {
+        content: "Larry| ";
+    }
+
+    6.730769230769231% {
+        content: "Larry D|";
+    }
+
+    7.6923076923076925% {
+        content: "Larry Da|";
+    }
+
+    8.653846153846153% {
+        content: "Larry Dan|";
+    }
+
+    9.615384615384615% {
+        content: "Larry Dani|";
+    }
+
+    10.576923076923077% {
+        content: "Larry Danie|";
+    }
+
+    11.538461538461538% {
+        content: "Larry Daniel|";
+    }
+
+    12.5% {
+        content: "Larry Daniels|";
+    }
+
+    28.846153846153847% {
+        content: "Larry Daniels|";
+    }
+
+    29.166666666666668% {
+        content: "Larry Daniel|";
+    }
+
+    29.48717948717949% {
+        content: "Larry Danie|";
+    }
+
+    29.80769230769231% {
+        content: "Larry Dani|";
+    }
+
+    30.12820512820513% {
+        content: "Larry Dan|";
+    }
+
+    30.44871794871795% {
+        content: "Larry Da|";
+    }
+
+    30.76923076923077% {
+        content: "Larry D|";
+    }
+
+    31.08974358974359% {
+        content: "Larry| ";
+    }
+
+    31.410256410256412% {
+        content: "Larry|";
+    }
+
+    31.730769230769234% {
+        content: "Larr|";
+    }
+
+    32.05128205128205% {
+        content: "Lar|";
+    }
+
+    32.371794871794876% {
+        content: "La|";
+    }
+
+    32.69230769230769% {
+        content: "L|";
+    }
+
+    33.333333333333336% {
+        content: "|";
+    }
+
+    34.72222222222222% {
+        content: "D|";
+    }
+
+    36.111111111111114% {
+        content: "De|";
+    }
+
+    37.5% {
+        content: "Dev|";
+    }
+
+    38.88888888888889% {
+        content: "Deve|";
+    }
+
+    40.27777777777778% {
+        content: "Devel|";
+    }
+
+    41.66666666666667% {
+        content: "Develo|";
+    }
+
+    43.05555555555556% {
+        content: "Develop|";
+    }
+
+    44.44444444444444% {
+        content: "Develope|";
+    }
+
+    45.833333333333336% {
+        content: "Developer|";
+    }
+
+    62.03703703703704% {
+        content: "Developer|";
+    }
+
+    62.50000000000001% {
+        content: "Develope|";
+    }
+
+    62.96296296296297% {
+        content: "Develop|";
+    }
+
+    63.42592592592593% {
+        content: "Develo|";
+    }
+
+    63.88888888888889% {
+        content: "Devel|";
+    }
+
+    64.35185185185186% {
+        content: "Deve|";
+    }
+
+    64.81481481481482% {
+        content: "Dev|";
+    }
+
+    65.27777777777779% {
+        content: "De|";
+    }
+
+    65.74074074074075% {
+        content: "D|";
+    }
+
+    66.66666666666667% {
+        content: "|";
+    }
+
+    68.22916666666667% {
+        content: "D|";
+    }
+
+    69.79166666666667% {
+        content: "De|";
+    }
+
+    71.35416666666667% {
+        content: "Des|";
+    }
+
+    72.91666666666667% {
+        content: "Desi|";
+    }
+
+    74.47916666666667% {
+        content: "Desig|";
+    }
+
+    76.04166666666667% {
+        content: "Design|";
+    }
+
+    77.60416666666667% {
+        content: "Designe|";
+    }
+
+    79.16666666666667% {
+        content: "Designer|";
+    }
+
+    95.3125% {
+        content: "Designer|";
+    }
+
+    95.83333333333333% {
+        content: "Designe|";
+    }
+
+    96.35416666666667% {
+        content: "Design|";
+    }
+
+    96.875% {
+        content: "Desig|";
+    }
+
+    97.39583333333333% {
+        content: "Desi|";
+    }
+
+    97.91666666666667% {
+        content: "Des|";
+    }
+
+    98.4375% {
+        content: "De|";
+    }
+
+    98.95833333333333% {
+        content: "D|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+/* Main Style End */
+
+/* About Style Start */
+#about .img {
+    position: relative;
+}
+
+#about .img::before {
+    content: "";
+    position: absolute;
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    left: -6%;
+    bottom: -6%;
+    z-index: -1;
+}
+
+#about .col-7 h3 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+
+#about .job-title,
+#about p {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+#about .btns button {
+    transition: all 0.3s ease-in-out;
+}
+
+#about .btns button:first-child:hover {
+    background-color: transparent;
+    color: var(--main-black);
+}
+
+#about .btns button:nth-of-type(2):hover {
+    background-color: var(--main-black) !important;
+    color: var(--main-white) !important;
+}
+
+/* About Style End */
+
+/* Services Style Start */
+#services .card-group .col .icon {
+    transition: all 0.3s ease-in-out;
+}
+
+#services .card-group .col:hover .icon {
+    background-color: var(--main-black) !important;
+    color: var(--main-white);
+}
+
+/* Services Style End */
+
+/* Works Style Start */
+#works .card {
+    border-radius: 0;
+    border: none;
+}
+
+#works .nav-tabs .nav-item button {
+    position: relative;
+}
+
+#works .nav-tabs .nav-item button::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: -15%;
+    left: 0;
+    transition: all 0.5s;
+}
+
+#works .nav-tabs .nav-item .active::before {
+    width: 100%;
+}
+
+#works .img {
+    position: relative;
+}
+
+#works .img img {
+    border-radius: 0;
+}
+
+#works .img .icons h6 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+
+#works .img .overlay {
+    background-color: var(--main-white);
+    position: absolute;
+    inset: 1.5%;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+#works .img:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#works .img .icons ul li i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#works .img .icons ul li:hover {
+    background-color: transparent !important;
+    color: var(--main-black) !important;
+}
+
+/* Works Style End */
+
+
+/* Clients Style Start */
+#clients .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+    margin-left: 0.75rem;
+}
+
+#clients .img {
+    width: 100px;
+    height: 100px;
+}
+
+#clients .carousel-inner .carousel-item h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+#clients .carousel-inner .carousel-item p,
+#clients .carousel-inner .carousel-item span {
+    color: var(--secondary-color) !important;
+}
+
+/* Clients Style End */
+
+/* Counter Style Start */
+#counter h3 {
+    font-family: var(--heading-font);
+    font-weight: 900 !important;
+}
+
+/* Counter Style End */
+
+/* Team Style Start */
+#team .img {
+    position: relative;
+    overflow: hidden;
+}
+
+#team .img img {
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+}
+
+#team .card-body {
+    background-color: #5b5b5b;
+}
+
+#team .img .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.904);
+    inset: 1.5%;
+    z-index: 1;
+    visibility: hidden;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#team .card:hover .overlay {
+    visibility: visible;
+    transform: rotateY(360deg) scale(1, 1);
+    opacity: 1;
+}
+
+#team .card:hover img {
+    scale: 1.3;
+}
+
+#team .img .social-icons ul li i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#team .img .social-icons ul li:hover {
+    background-color: transparent !important;
+    color: var(--main-black) !important;
+}
+
+#team .card-body h4,
+span {
+    font-family: var(--heading-font);
+    color: var(--main-white);
+}
+
+/* Team Style End */
+
+/* Contact Style Start */
+#contact h3 {
+    font-family: var(--heading-font);
+}
+
+#contact .fw-semibold {
+    font-size: 0.80rem;
+    font-family: var(--secondary-font);
+}
+
+#contact .icon i {
+    transition: all 0.3s ease-in-out;
+}
+
+#contact .icon:hover i {
+    background-color: var(--main-black) !important;
+    color: var(--main-white);
+}
+
+#contact form input,
+textarea {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #F4F4F4 !important;
+}
+
+#contact form button {
+    transition: all 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background-color: transparent;
+    color: var(--main-black);
+}
+
+/* Contact Style End */
